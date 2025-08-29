@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textofy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+   
+    <div id="parent">
+
+        <div class="child">
+            <h1 id="heading">Textofy</h1>
+        </div>
+
+        <div class="child" id="child2">
+            <div id="area" contenteditable="true"></div>
+            <button onclick="downloadImage()">Download</button>
+        </div>
+
+        <div class="child" id="child3">
+            <div id="bgcolor">
+                <h1>Background color</h1>
+                <button class="btn" style="background-color: red;" onclick="changeBgColor('red')"></button>
+
+                <button class="btn" style="background-color: green;" onclick="changeBgColor('green')"></button>
+
+                <button class="btn" style="background-color: blue;" onclick="changeBgColor('blue')"></button>
+
+                <button class="btn" style="background-color: orange;" onclick="changeBgColor('orange')"></button>
+
+                <button class="btn" style="background-color: yellow;" onclick="changeBgColor('yellow')"></button>
+            </div>
+
+            <div id="textcolor">
+                <h1>Text color</h1>
+                <button class="btn" style="background-color: red;" onclick="changeTextColor('red')"></button>
+
+                <button class="btn" style="background-color: green;" onclick="changeTextColor('green')"></button>
+
+                <button class="btn" style="background-color: blue;" onclick="changeTextColor('blue')"></button>
+
+                <button class="btn" style="background-color: orange;" onclick="changeTextColor('orange')"></button>
+
+                <button class="btn" style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
+            </div>
+
+            <div id="fontfamily">
+                <h2 style="font-family: verdana;" onclick="changeFont('verdana')">Hello</h2>
+                <h2 style="font-family: cursive;" onclick="changeFont('cursive')">Hello</h2>
+                <h2 style="font-family: Lucida Sans;" onclick="changeFont('Lucida Sans')">Hello</h2>
+                <h2 style="font-family: Impact;" onclick="changeFont('Impact')">Hello</h2>
+                <h2 style="font-family: Georgia;" onclick="changeFont('Georgia')">Hello</h2>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
